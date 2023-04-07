@@ -4,6 +4,7 @@
   "license": "MIT",
   "description": "Webman plugin boddy/mqtt",
   "require": {
+    "workerman/mqtt": ">=1.4"
   },
   "autoload": {
     "psr-4": {
