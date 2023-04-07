@@ -10,6 +10,8 @@ class Install
      */
     protected static $pathRelation = array (
   'config/plugin/boddy/mqtt' => 'config/plugin/boddy/mqtt',
+  'plugin/boddy/mqtt' => 'plugin/boddy/mqtt',
+
 );
 
     /**
