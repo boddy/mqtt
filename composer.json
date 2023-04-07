@@ -1,0 +1,13 @@
+{
+  "name": "boddy/mqtt",
+  "type": "library",
+  "license": "MIT",
+  "description": "Webman plugin boddy/mqtt",
+  "require": {
+  },
+  "autoload": {
+    "psr-4": {
+      "Boddy\\Mqtt\\": "src"
+    }
+  }
+}
