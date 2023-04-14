@@ -2,31 +2,28 @@
 
 namespace plugin\boddy\mqtt;
 
+use Workerman\Mqtt\Client;
+
 class Events
 {
-    public static function onWorkerStart($worker)
+    public static function onConnect(Client $mqtt)
     {
-
+        echo "onConnect";
     }
 
-    public static function onConnect($client_id)
+    public static function onMessage($topic, $content, Client $mqtt)
     {
-
+        echo "onMessage";
     }
 
-    public static function onMessage($client_id, $message)
+    public static function onClose()
     {
-
+        echo "onClose";
     }
 
-    public static function onClose($client_id)
+    public static function onError(\Exception $e)
     {
-
-    }
-
-    public static function OnError(\Exception $e)
-    {
-
+        echo "onError";
     }
 
 }
